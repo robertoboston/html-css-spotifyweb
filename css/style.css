@@ -45,6 +45,7 @@
     background-color: brown;
     margin-top: 100px;
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 /* UTILITIES  */
@@ -62,8 +63,6 @@
 }
 
 /* MAIN  */
-
-
 
 .nav-bar-main ul{
     display: flex;
@@ -225,6 +224,7 @@
 @media screen and (min-width: 600px) {
 
     .side-bar{
+        max-width: 300px;
         width: 300px;
     }
 
@@ -247,6 +247,12 @@
         justify-content: center;
         width: 100%;
     }
+
+    .top-bar{
+        width: calc(100vw - 250px);
+    }
+
+   
 
    
 

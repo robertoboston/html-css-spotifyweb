@@ -225,7 +225,7 @@
 
     .side-bar{
         max-width: 300px;
-        width: 300px;
+        width: 100%;
     }
 
     .up-content img{
@@ -249,8 +249,18 @@
     }
 
     .top-bar{
-        width: calc(100vw - 250px);
+        width: calc(100vw - 300px);
     }
+
+    .main-content{
+        width: calc(100vw - 300px)
+    }
+
+   
+
+   
+
+    
 
    
 

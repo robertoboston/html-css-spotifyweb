@@ -57,8 +57,31 @@
     margin-left: 5px;
 }
 
+.font-size{
+    font-size: 12px;
+}
 
 /* MAIN  */
+
+
+
+.nav-bar-main ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.list-top-main li{
+    padding: 10px;
+}
+
+.centered{
+    align-content: center;
+}
+
+/* SIDE BAR  */
 
 .container-side-bar{
     display: flex;
@@ -219,6 +242,15 @@
         width: 50px;
     }
 
+    .nav-bar-main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+   
+
+    
 
   
 }

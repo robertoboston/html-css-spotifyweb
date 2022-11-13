@@ -188,8 +188,9 @@
 
 .playlist-list{
     margin: 0 10px;
-    overflow-y: auto;
+    overflow: auto;
     display: none;
+    max-height: 300px;
 }
 
 .profile img{
@@ -208,11 +209,23 @@
 
 .install{
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .profile{
     margin-top: 10px;
+}
+
+.profile span{
+    display: none;
+}
+
+.install span{
+    display: none
+}
+
+.square-2 hr{
+    display: none;
 }
 
 /* BOTTOM BAR  */
@@ -381,6 +394,17 @@
     }
 
     .playlist-list{
+        display: block;
+    }
+    .profile span{
+        display: inline-block;
+    }
+    
+    .install span{
+        display: inline-block;
+    }
+    
+    .square-2 hr{
         display: block;
     }
     

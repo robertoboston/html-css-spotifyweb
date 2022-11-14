@@ -17,10 +17,6 @@ body{
 /* STRUCTURE */
 
 
-.none{
-    display: none;
-}
-
 .side-bar{
     width: 80px;
     background-color: black;
@@ -192,6 +188,10 @@ section{
 
 /* SIDE BAR  */
 
+.none{
+    display: none;
+
+}
 
 .square{
     margin: 10px 10px;
@@ -225,10 +225,8 @@ section{
 }
 
 .description{
-    min-width: 150px;
-    min-height: 40px;
-    padding: 12px 0;
-    
+    margin: 20px 0;
+
 }
 
 .playlist-content{
@@ -307,6 +305,13 @@ section{
 
 .jhon-doe hr{
     display: none;
+}
+
+.green-bar{
+    height: 100%;
+    width: 10%;
+    background-color: #adff2f;
+    
 }
 
 /* BOTTOM BAR  */
@@ -510,9 +515,6 @@ section{
         height: 50px;
     }
 
-    .container-side-bar{
-        width: 50px;
-    }
 
     .nav-bar-main {
         display: flex;

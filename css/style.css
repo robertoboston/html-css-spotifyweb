@@ -479,6 +479,16 @@ section{
    border: none;
 }
 
+.time:hover{
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+.volume:hover{
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
 
 
 

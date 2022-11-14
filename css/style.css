@@ -34,7 +34,7 @@ body{
 
 .top-bar{
     height: 100px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     width: calc(100vw - 80px);
     position: fixed;
     top: 0;
@@ -47,17 +47,17 @@ body{
 
 .bottom-bar{
     height: 100px;
-    background-color: black;
+    background-color: rgb(74, 68, 68);
     
 }
 
 .main-content{
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     width: calc(100vw - 80px);
     background-color: brown;
-    margin-top: 100px;
     overflow-y: auto;
     overflow-x: auto;
+    padding-top: 100px;
 }
 
 /* UTILITIES  */
@@ -68,8 +68,11 @@ body{
 
 .square-2{
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 10px;
+    z-index: 2;
+    min-height: 100px;
+    background-color: black;
 }
 
 .text-white{
@@ -81,7 +84,7 @@ body{
 }
 
 .font-size{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .display-flex{
@@ -107,21 +110,46 @@ body{
 
 /* MAIN  */
 
-.nav-bar-main ul{
-    display: flex;
+.nav-bar-list{
     list-style: none;
-    padding: 10px 0;
-    justify-content: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
 }
 
-.list-top-main li{
-    padding: 10px;
+.nav-bar-list li{
+    padding: 20px 10px;
+    
 }
 
-.centered{
-    align-content: center;
+.cards-title{
+    padding: 5px 15px;
 }
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(100% / 2 - 20px);
+    margin: 10px
+    
+}
+
+.card img{
+    width: 100%;
+}
+
+.description-card{
+    text-align: center;
+}
+
+
+
+
 
 /* SIDE BAR  */
 
@@ -193,7 +221,6 @@ body{
 
 .playlist-list{
     margin: 0 10px;
-    overflow: auto;
     display: none;
     max-height: 300px;
 }
@@ -341,7 +368,7 @@ body{
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 630px) {
 
     .side-bar{
         max-width: 300px;
@@ -420,19 +447,25 @@ body{
 
    
 
-   
-
-    
-
-   
-
-   
-
-    
-
-  
 }
 
+
+@media screen and (min-width:768px) {
+
+    .card{
+        width: calc(100% / 4 - 20px);
+    }
+    
+}
+
+
+@media screen and (min-width:1100px) {
+
+   .card{
+    width: calc(100% / 6 - 20px);
+   }
+
+}
 
 
 

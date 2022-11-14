@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    font-family: "roboto",sans-serif;
+}
+
 .structure{
     display: flex;
     
@@ -19,7 +23,8 @@
 
 .side-bar{
     width: 80px;
-    background-color: aqua;
+    background-color: black;
+    color: white;
     height: calc(100vh - 100px);
     overflow-y: auto;
     z-index: 1;
@@ -105,7 +110,7 @@
 .nav-bar-main ul{
     display: flex;
     list-style: none;
-    padding: 10px;
+    padding: 10px 0;
     justify-content: center;
 
 }
@@ -123,7 +128,6 @@
 
 
 .square{
-    background-color: red;
     margin: 10px 10px;
     width: 30px;
     height: 30px;
@@ -184,6 +188,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    color: black;
 }
 
 .playlist-list{
@@ -406,6 +411,10 @@
     
     .square-2 hr{
         display: block;
+    }
+
+    .square-2{
+       min-width: 90%;
     }
     
 

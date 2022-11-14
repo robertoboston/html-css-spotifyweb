@@ -16,7 +16,6 @@ body{
 /* STRUCTURE */
 
 
-
 .none{
     display: none;
 }
@@ -54,7 +53,8 @@ body{
 .main-content{
     height: calc(100vh - 100px);
     width: calc(100vw - 80px);
-    background-color: brown;
+    background-color: #141922;
+    color: white;
     overflow-y: auto;
     overflow-x: auto;
     padding-top: 100px;
@@ -66,14 +66,6 @@ body{
     display: inline;
 }
 
-.square-2{
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    z-index: 2;
-    min-height: 100px;
-    background-color: black;
-}
 
 .text-white{
     color: white;
@@ -129,6 +121,7 @@ body{
 
 .cards-title{
     padding: 5px 15px;
+    margin-bottom: 20px;
 }
 
 .cards{
@@ -159,7 +152,6 @@ section{
 
 
 /* SIDE BAR  */
-
 
 
 .square{
@@ -230,6 +222,17 @@ section{
     margin: 0 10px;
     display: none;
     max-height: 300px;
+    line-height: 2;
+    overflow-y: auto;
+}
+
+.jhon-doe{
+    position: fixed;
+    bottom: 100px;
+    left: 10px;
+    z-index: 2;
+    min-height: 100px;
+    background-color: black;
 }
 
 .profile img{
@@ -263,7 +266,7 @@ section{
     display: none
 }
 
-.square-2 hr{
+.jhon-doe hr{
     display: none;
 }
 
@@ -443,12 +446,12 @@ section{
         display: inline-block;
     }
     
-    .square-2 hr{
+    .jhon-doe hr{
         display: block;
     }
 
-    .square-2{
-       min-width: 90%;
+    .jhon-doe{
+       min-width: 250px
     }
     
 

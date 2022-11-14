@@ -103,6 +103,10 @@ body{
     margin-bottom: 10px;
 }
 
+.rounded{
+    border-radius: 100%;
+}
+
 /* TOP-BAR  */
 
 .style-button{
@@ -115,13 +119,16 @@ body{
 
 }
 
+.top-bar-button{
+    margin-right: 20px;
+}
+
 /* MAIN  */
 
 .nav-bar-list{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     padding: 30px;
     font-size: 15px;
 }
@@ -143,7 +150,7 @@ body{
 
 .card{
     width: calc(100% / 2 - 20px);
-    margin: 10px
+    margin: 10px;
     
 }
 
@@ -159,7 +166,27 @@ section{
     margin-top: 50px;
 }
 
+.play{
+    position: relative;
+}
 
+.overlay{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   opacity: 0;
+}
+
+.overlay i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
 
 
 
@@ -216,7 +243,7 @@ section{
 .playlist-square{
     height: 50px;
     width: 50px;
-    background-color: white;
+    background-color: #717171;
     margin: 10px 10px;
     position: relative;
     
@@ -309,6 +336,7 @@ section{
 .col-sx{
     display: flex;
     min-width: 165px;
+    align-items: center;
 }
 
 .img-sinister{
@@ -336,7 +364,7 @@ section{
 
 .col-cen i{
     color: white;
-    padding: 0 8px;
+    padding: 10px 10px;
 }
 
 .time-bar{
@@ -363,6 +391,7 @@ section{
 .media-player{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .col-dx{
@@ -387,6 +416,70 @@ section{
     height: 100%;
 
 }
+
+.col-dx i{
+    padding: 0 5px;
+}
+
+.icon-bottom-col-sx i{
+    color: #717171;
+}
+
+/* HOVER  */
+
+.nav-bar-list li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.description:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+.playlist-square:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.playlist-list p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.install:hover{
+    color: white;
+    cursor: pointer;
+
+}
+
+.icon-bottom-col-sx i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+.play:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.play:hover .overlay i{
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+}
+
+.style-button:hover{
+   padding: 15px 55px;
+   font-size: 16px;
+   background-color: #adff2f;
+   color: black;
+   border: none;
+}
+
+
 
 
 

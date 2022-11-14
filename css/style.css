@@ -6,6 +6,7 @@
 
 body{
     font-family: "roboto",sans-serif;
+    
 }
 
 .structure{
@@ -23,7 +24,7 @@ body{
 .side-bar{
     width: 80px;
     background-color: black;
-    color: white;
+    color: #717171;
     height: calc(100vh - 100px);
     overflow-y: auto;
     z-index: 1;
@@ -54,7 +55,7 @@ body{
     height: calc(100vh - 100px);
     width: calc(100vw - 80px);
     background-color: #141922;
-    color: white;
+    color: #717171;
     overflow-y: auto;
     overflow-x: auto;
     padding-top: 100px;
@@ -76,7 +77,6 @@ body{
 }
 
 
-
 .display-flex{
     display: flex;
 }
@@ -86,9 +86,21 @@ body{
     
 }
 
+.margin-top-20{
+    margin-top: 20px;
+}
+
 .rounded img{
     border-radius: 100%;
     object-fit: contain;
+}
+
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px;
 }
 
 /* TOP-BAR  */

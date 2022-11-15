@@ -451,6 +451,7 @@ section{
     width: 10px;
     background-color: white;
     height: 100%;
+    position: relative;
 
 }
 
@@ -463,6 +464,10 @@ section{
 }
 
 .progress-cursor{
+    display: none;
+}
+
+.progress-cursor-2{
     display: none;
 }
 
@@ -540,6 +545,20 @@ section{
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+
+}
+
+.volume:hover .progress-cursor-2{
+    display:block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
 
 }
 
@@ -652,6 +671,13 @@ section{
     .col-sx{
         min-width: 120px;
     }
+}
+
+@media screen and (max-height:700px) {
+    .jhon-doe{
+        display: none;
+    }
+    
 }
 
 

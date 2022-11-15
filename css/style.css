@@ -9,12 +9,25 @@ body{
     
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(18, 17, 17)
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(127, 127, 127);
+    border-radius: 40px;
+}
+
+/* STRUCTURE */
+
 .structure{
     display: flex;
     
 }
-
-/* STRUCTURE */
 
 
 .side-bar{
@@ -38,12 +51,13 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
     
 }
 
 .bottom-bar{
     height: 100px;
-    background-color: rgb(74, 68, 68);
+    background-color: #282828;
     
 }
 
@@ -207,7 +221,7 @@ section{
 .logo-small{
     width: 30px;
     height: 30px;
-    margin: 10px 10px;
+    margin: 10px 15px;
 }
 
 .logo{
@@ -222,6 +236,10 @@ section{
 .side-bar-content{
     display: flex;
     
+}
+
+.menu-side-bar{
+    display: flex;
 }
 
 .description{
@@ -258,7 +276,7 @@ section{
 .playlist-list{
     margin: 0 10px;
     display: none;
-    max-height: 300px;
+    max-height: 400px;
     line-height: 2;
     overflow-y: auto;
 }
@@ -404,6 +422,7 @@ section{
     width: 50px;
     background-color: white;
     height: 100%;
+    position: relative;
 }
 
 .media-player{
@@ -443,6 +462,10 @@ section{
     color: #717171;
 }
 
+.progress-cursor{
+    display: none;
+}
+
 /* HOVER  */
 
 .nav-bar-list li:hover{
@@ -461,7 +484,7 @@ section{
     cursor: pointer;
 }
 
-.playlist-list p:hover{
+.playlist-list ul li:hover{
     color: white;
     cursor: pointer;
 }
@@ -506,6 +529,20 @@ section{
     background-color: #adff2f;
     cursor: pointer;
 }
+
+.time:hover .progress-cursor{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
 
 
 /* MEDIA QUERY  */
@@ -605,6 +642,16 @@ section{
     width: calc(100% / 6 - 20px);
    }
 
+}
+
+@media screen and (max-width:445px){
+    .col-sx img{
+        display: none;
+    }
+
+    .col-sx{
+        min-width: 120px;
+    }
 }
 
 
